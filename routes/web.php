@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'PostsController@getHome' );
+Route::get('visitor_posts','PostsController@getVisitorPosts');
