@@ -18,18 +18,16 @@
       <div class="navbar-header">
         <h4 class="logo">BLOG MM</h4>
       </div>
-     
-     <span class="glyphicon glyphicon" aria-hidden="true"></span>
+     <!-- <span class="glyphicon glyphicon" aria-hidden="true"></span>
        <span class="fa fa-linkedin-square"></span> 
        <i class="fa fa-facebook-square"></i> 
        <i class="fa fa-google-plus-square"></i> 
-   
+     -->
      <div class="link navbar-right">
-       <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>
-       <a class="article" href="">Articles</a>
+     <span class="glyphicon glyphicon-duplicate" aria-hidden="true">
+       <a class="article" href="">Articles</a></span>
        <span class="glyphicon glyphicon-user" aria-hidden="true">
-       </span>
-       <a class="admin" href="">Administration</a>
+       <a class="admin" href="">Administration</a></span>
      </div>
    </div>
  </nav>
@@ -38,7 +36,7 @@
 
  <div class="container">
   <div class="row">
-    <p class="copyright text-muted">Copyright @ BLOG MM 2017</p>
+    <p>Copyright @ BLOG MM 2017</p>
   </div>
 
 </div>
