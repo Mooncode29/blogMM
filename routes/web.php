@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'PostsController@getHome' );
+Route::get('/', function(){
+	return view('home');
+});
 
 Route::get('articles', function(){
 	return view('articles');

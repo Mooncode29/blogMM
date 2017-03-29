@@ -9,30 +9,30 @@
  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 </head>
 
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/app.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/app.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-  
 
-  <nav class=" menu navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <img class="logo" src="images/logo.png">
-      </div>
 
-      <div class=" social row">
-       <div class="col-md-4">
-         <a href="https://fr-fr.facebook.com/"><i class=" book fa fa-facebook"></i></a> 
-         <a href="https://twitter.com/?lang=fr"><i class="twit fa fa-twitter"></i></a> 
-         <a href="https://github.com/"><i class=" git fa fa-github" aria-hidden="true"></i></a>
-       </div>
-       <div class="link">
-         <i class=" news fa fa-newspaper-o" aria-hidden="true"></i>
-         <a class="article" href='articles'>Articles</a>
-         <i class=" o fa fa-user-o" aria-hidden="true"></i>
-         <a class="admin" href="admin">Administration</a>
-       </div>
+<nav class=" menu navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <img class="logo" src="images/logo.png">
+    </div> 
+    <div class=" social row">
+     <div class="col-md-4">
+       <a href="https://fr-fr.facebook.com/"><i class=" book fa fa-facebook"></i></a> 
+       <a href="https://twitter.com/?lang=fr"><i class="twit fa fa-twitter"></i></a> 
+       <a href="https://github.com/"><i class=" git fa fa-github" aria-hidden="true"></i></a>
+     </div>
+     <div class="link">
+       <i class=" h fa fa-flag-o" aria-hidden="true"></i>
+       <a class="home" href="/">Accueil</a>
+       <i class=" news fa fa-newspaper-o" aria-hidden="true"></i>
+       <a class="article" href="articles">Articles</a>
+       <i class=" o fa fa-user-o" aria-hidden="true"></i>
+       <a class="admin" href="admin">Administration</a>
      </div>
    </div>
  </div>
@@ -51,3 +51,6 @@
 
 </body>
 </html>
+
+
+

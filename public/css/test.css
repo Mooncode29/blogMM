@@ -12,12 +12,12 @@ body{
 	background: #001f3f;
 	height: 150px;
 }
-i.news ,a.article,i.o, a.admin,i.h, a.home{
+i.news ,a.article,i.o, a.admin{
 	color:#f0F8FF;
 	text-transform: uppercase;
 	padding-top:5em;
 }
-.article,.home{
+.article{
 	padding-right: 2em;
 }
 .logo{
@@ -25,6 +25,9 @@ i.news ,a.article,i.o, a.admin,i.h, a.home{
 	padding-top:2.4em;
 	
 }
+
+
+
 
 .col-md-4{
 	padding-left: 10em;
@@ -38,6 +41,13 @@ i.news ,a.article,i.o, a.admin,i.h, a.home{
 }
 
 
+h4{
+	padding-top: 5px;
+	text-transform: uppercase;
+	color:#f0F8FF;
+
+}
+
 p, i.cop{
 	font-size: 1.2em;
 	text-align: center;
@@ -49,11 +59,6 @@ i.book,.twit,.git{
 	padding-left: 1em;
 	padding-top: 3em;
 	color:#f0F8FF;
-	font-size:20px;
+	/*font-size: 3em;*/
 
 }
- .img{
-    	max-width: 100%;
-    	height: auto;
-    	background-color::transparent; 
-    }
