@@ -8,13 +8,13 @@ body{
 }
 
 .menu{
-	background: #001f3f;
+	background: #3b5998;
 	height: 150px;
 }
 i.news ,a.article,i.o, a.admin{
-	color:#f0F8FF;
-	text-transform: uppercase;
-	padding-top:5em;
+	color:white;
+	padding-top:3.2em;
+	font-size: 1.3em;
 }
 .article{
 	padding-right: 2em;
@@ -22,7 +22,7 @@ i.news ,a.article,i.o, a.admin{
 .logo{
 	
 	padding-top:2.4em;
-	
+
 }
 
 
@@ -57,7 +57,7 @@ p, i.cop{
 i.book,.twit,.git{
 	padding-left: 1em;
 	padding-top: 3em;
-	color:#f0F8FF;
-	/*font-size: 3em;*/
+	color:white;
+	
 
 }
