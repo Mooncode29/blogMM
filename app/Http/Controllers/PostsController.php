@@ -12,7 +12,7 @@ class PostsController extends Controller{
 	}
 
 	public function getVisitorPosts(){
-		
+		return view('articles');
 
 	}
 }

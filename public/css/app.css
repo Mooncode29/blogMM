@@ -25,9 +25,6 @@ i.news ,a.article,i.o, a.admin{
 
 }
 
-
-
-
 .col-md-4{
 	padding-left: 10em;
 	font-size:1.6em;
@@ -60,4 +57,9 @@ i.book,.twit,.git{
 	color:white;
 	
 
+}
+.img{
+	width: 1300px;
+	height: 800px;
+	background-color::transparent; 
 }

@@ -23,15 +23,15 @@
 
       <div class=" social row">
        <div class="col-md-4">
-         <a href=""><i class=" book fa fa-facebook"></i></a> 
-         <a href=""><i class="twit fa fa-twitter"></i></a> 
-         <a href=""><i class=" git fa fa-github" aria-hidden="true"></i></a>
+         <a href="https://fr-fr.facebook.com/"><i class=" book fa fa-facebook"></i></a> 
+         <a href="https://twitter.com/?lang=fr"><i class="twit fa fa-twitter"></i></a> 
+         <a href="https://github.com/"><i class=" git fa fa-github" aria-hidden="true"></i></a>
        </div>
        <div class="link">
          <i class=" news fa fa-newspaper-o" aria-hidden="true"></i>
-         <a class="article" href="">Articles</a>
+         <a class="article" href='articles'>Articles</a>
          <i class=" o fa fa-user-o" aria-hidden="true"></i>
-         <a class="admin" href="">Administration</a>
+         <a class="admin" href="admin">Administration</a>
        </div>
      </div>
    </div>

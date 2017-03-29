@@ -12,4 +12,11 @@
 */
 
 Route::get('/', 'PostsController@getHome' );
-Route::get('visitor_posts','PostsController@getVisitorPosts');
+
+Route::get('articles', function(){
+	return view('articles');
+});
+
+Route::get('admin', function(){
+	return view('admin');
+});
