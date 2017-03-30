@@ -11,5 +11,9 @@
 |
 */
 
+Route::get('/admin', function () {
+    return view('layout-admin');
+});
 Route::get('/', 'PostsController@getHome' );
 Route::get('visitor_posts','PostsController@getVisitorPosts');
+
