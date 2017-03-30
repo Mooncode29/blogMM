@@ -13,7 +13,7 @@ body{
 	font-family: Cinzel Decorative;
 	text-transform: uppercase; 
 	font-size:6em;
-	padding-top: 1.5em;
+	padding-top: 2em;
 	text-align: right;
 }
 span{
@@ -37,7 +37,7 @@ h4,.auteur{
 .img{
 	background-image:url("/images/livre2.jpg");
 	width:1550px;
-	height:700px;
+	height:600px;
 }
 .photo{
 	margin:0;
@@ -80,12 +80,20 @@ i.book,.twit,.git{
 	font-size:20px;
 
 }
+.post,.blog-post-title{
+	padding-top: 4em;
+}
 footer{
-	position:absolute;
-	bottom:0;
+	
+	padding-top: 4em;
 	width:100%;
 	height:10px;
 	text-align: center;
 	font-size: 1.2em;
 	color:#001f3f;
 }
+
+/*formulaires de connexion*/
+
+
+

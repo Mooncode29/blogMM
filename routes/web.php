@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function(){
-	return view('home');
-});
+Route::get('/', 'PostsController@getHome');
 
+// Route::get('home', function(){
+	// return view('home');
+// });
 Route::get('articles', function(){
 	return view('articles');
 });
@@ -22,3 +23,6 @@ Route::get('articles', function(){
 Route::get('admin', function(){
 	return view('admin');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

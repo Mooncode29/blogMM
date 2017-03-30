@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller{
 
+ public function getHome()
+    {
+        return view('home');
+    }
+
+
 	
 }
 
