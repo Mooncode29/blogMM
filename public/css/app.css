@@ -2,11 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
 body{
-
-	height: 2000px;
+	/*layout et page home*/
+	height: 1800px;
 	font-family:Lora, sans-serif;
-	padding-top: 120px;
-	max-width: 100%;
+	padding-top: 150px;
+	
 }
 .mm{
 	color:#001f3f;
@@ -98,7 +98,17 @@ footer{
 	color:#001f3f;
 }
 
-/*formulaires de connexion*/
+/*page articles*/
 
+.a.container{
+	padding-top: 5em;
+	color:#001f3f;
 
+}
+h2.t{
+	text-align: center;
+	color:#001f3f;
+	font-size: 3em;
+}
+}
 
