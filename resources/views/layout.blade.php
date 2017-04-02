@@ -28,9 +28,9 @@
          <i class=" h fa fa-flag-o" aria-hidden="true"></i>
          <a class="home" href="/">Accueil</a>
          <i class=" news fa fa-newspaper-o" aria-hidden="true"></i>
-         <a class="article" href="articles">Articles</a>
+         <a class="article" href="article">Articles</a>
          <i class=" o fa fa-user-o" aria-hidden="true"></i>
-         <a class="admin" href="admin">Administration</a>
+         <a class="admin" href="register">Administration</a>
        </div>
      </div> 
    </div>

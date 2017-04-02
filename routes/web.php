@@ -13,15 +13,15 @@
 
 Route::get('/', 'PostsController@getHome');
 
-// Route::get('home', function(){
-	// return view('home');
-// });
-Route::get('articles', function(){
+Route::get('/account', function(){
+	return view('account');
+});
+Route::get('article', function(){
 	return view('articles');
 });
 
-Route::get('admin', function(){
-	return view('admin');
+Route::get('master',function(){
+	return view('master');
 });
 
 Auth::routes();
