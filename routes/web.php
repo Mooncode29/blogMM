@@ -12,7 +12,10 @@
 */
 
 Route::get('/admin', function () {
-    return view('layout_admin');
+    return view('layout-v2');
+});
+Route::get('/admin/create', function (){
+	return view('admin-pages.create');
 });
 Route::get('/', 'PostsController@getHome' );
 Route::get('visitor_posts','PostsController@getVisitorPosts');

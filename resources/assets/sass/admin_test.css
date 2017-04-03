@@ -1,25 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
-/*.navbar-default {
-	background: #001f3f;
-}
-.navbar-nav  > .menu-item {
-    float: none;
-    display: inline-block;
-    font-size: 1.4em;
-
-}
-a.title {
-	color: #f0F8FF;
-    
-}
-.barreLateral col-sm-3 {
-	height: 100%;
-	background: green;
-}
-*/
 body {
     overflow-x: hidden;
+    background: white !important;
  }
 
 /* Toggle Styles */
@@ -44,7 +25,7 @@ body {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #001f3f;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -58,6 +39,7 @@ body {
     width: 100%;
     position: absolute;
     padding: 15px;
+
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -68,29 +50,38 @@ body {
     position: absolute;
     top: 0;
     width: 250px;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding-top: 3em;
     list-style: none;
 }
 
-.sidebar-nav li {
+.sidebar-nav a {
     text-indent: 20px;
     line-height: 40px;
+    font-size: 18px;
+    padding-bottom: 2em;
+    padding-left: 1em;
 }
 
-.sidebar-nav li a {
+.sidebar-nav a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: white;
 }
-
-.sidebar-nav li a:hover {
+.sidebar-nav i {
+    padding-left: 4em;
+    color:white;
+}
+.fa-plus {
+    padding-top: 4em;
+}
+.sidebar-nav a:hover {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
 }
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
+.sidebar-nav a:active,
+.sidebar-nav a:focus {
     text-decoration: none;
 }
 
@@ -119,6 +110,7 @@ body {
 
     #sidebar-wrapper {
         width: 0;
+        margin-top:0px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
@@ -126,7 +118,7 @@ body {
     }
 
     #page-content-wrapper {
-        padding: 20px;
+        padding: 10em;
         position: relative;
     }
 
@@ -135,4 +127,23 @@ body {
         margin-right: 0;
     }
 }
+.navbar-default {
+    background-color: #001f3f !important;
+    height: 80px;
+}
+.title {
+    color : white !important;
+    font-size: 18px;
+}
+.navbar-brand > img {
+    height: 3em;
+}
 
+.contenu {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.btn-primary {
+    margin-right: 5em;
+}
