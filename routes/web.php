@@ -11,18 +11,22 @@
 |
 */
 
+
 Route::get('/', 'PostsController@getHome');
 
-// Route::get('home', function(){
-	// return view('home');
-// });
 Route::get('articles', function(){
 	return view('articles');
 });
 
-Route::get('admin', function(){
-	return view('admin');
-});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/admin', function () {
+    return view('admin-pages.home');
+});
+Route::post('/admin/create', 'AdminPostsController@store');
+Route::get('/', 'PostsController@getHome' );
+Route::get('visitor_posts','PostsController@getVisitorPosts');
+
+
