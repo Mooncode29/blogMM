@@ -1,4 +1,4 @@
-@extends('layout-v2');
+@extends('layout_admin');
 @section('content')
  <div id="page-content-wrapper">                                
     <div class="container-fluid">

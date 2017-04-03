@@ -12,11 +12,9 @@
 */
 
 Route::get('/admin', function () {
-    return view('layout-v2');
+    return view('admin-pages.home');
 });
-Route::get('/admin/create', function (){
-	return view('admin-pages.create');
-});
+Route::post('/admin/create', 'AdminPostsController@store');
 Route::get('/', 'PostsController@getHome' );
 Route::get('visitor_posts','PostsController@getVisitorPosts');
 
