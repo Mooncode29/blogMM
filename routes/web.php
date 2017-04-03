@@ -11,10 +11,9 @@
 |
 */
 
-Route::get('/', 'PostsController@getHome');
 
-Route::get('/account', function(){
-	return view('account');
+Route::get('/', function(){
+	return view('home');
 });
 Route::get('article', function(){
 	return view('articles');
