@@ -12,6 +12,7 @@
 */
 
 
+
 Route::get('/', function(){
 	return view('home');
 });
@@ -26,3 +27,7 @@ Route::get('master',function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('master/create', 'AdminArticleController@create');
+Route::resource('posts', 'AdminArticleController');
+
