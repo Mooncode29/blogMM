@@ -1,11 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
-// Variables
 @import "variables";
 
-// Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
+@import url(https://fontlibrary.org/face/cinzel);
 
 
 body{
@@ -16,11 +14,11 @@ body{
 	background: white;
 
 }
-
+// layout/home
 
 .mm{
 	color:#001f3f;
-	font-family: Cinzel Decorative;
+	font-family: Cinzel Decorative !important;
 	text-transform: uppercase; 
 	font-size:6em;
 	padding-right:2em;
@@ -112,6 +110,7 @@ footer{
 	font-size: 1.2em;
 	color:#001f3f;
 }
+
 .cit.col-lg-8{
 	padding:0;
 }
@@ -137,4 +136,5 @@ h2.t{
 	font-size:1.5em;
 	color:#001f3f;
 }
+
 
