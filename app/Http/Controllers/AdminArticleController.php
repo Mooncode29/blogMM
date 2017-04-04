@@ -13,7 +13,7 @@ class AdminArticleController extends Controller
      */
     public function index()
     {
-        //
+       
     }
 
     /**
@@ -34,7 +34,7 @@ class AdminArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -45,7 +45,7 @@ class AdminArticleController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
