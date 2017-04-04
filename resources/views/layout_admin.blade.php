@@ -47,7 +47,10 @@
                 
             </div>
         </div>
-        @yield('content')
+        <div id="page-content-wrapper">
+            @yield('content')
+
+        </div>  
     </div>
     <!-- /#wrapper -->
 

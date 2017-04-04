@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/admin', function () {
-    return view('admin-pages.home');
+Route::get('master', function () {
+    return view('posts.home');
 });
-Route::post('/admin/create', 'AdminPostsController@store');
-Route::get('/', 'PostsController@getHome' );
-Route::get('visitor_posts','PostsController@getVisitorPosts');
-
+Route::get('master/create', 'AdminArticleController@create');
+Route::resource('posts', 'AdminArticleController');
