@@ -23,7 +23,7 @@ class AdminArticleController extends Controller
      */
     public function create()
     {
-        //
+        return view('/posts.create');
     }
 
     /**

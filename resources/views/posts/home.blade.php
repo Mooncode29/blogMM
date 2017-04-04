@@ -1,6 +1,6 @@
 @extends('layout_admin');
 @section('content')
- <div id="page-content-wrapper">                                
+                               
     <div class="container-fluid">
         <div class="row">
             <div class=" contenu col-lg-12">
@@ -12,10 +12,7 @@
 		            		<button class="btn btn-primary"> supprimer la selection</button>
             			</div>
 				  	</div>
-<!-- 				  	<div class="panel-body">
-				    	<p>...</p>
-				  	</div> -->
-
+<!-- 				  	
 				  <!-- Table -->
 					<div class="responsive table">
 	            		<table class="table table-striped"> 
@@ -38,5 +35,5 @@
             </div>
         </div>
     </div>
-</div>
+
 @endsection

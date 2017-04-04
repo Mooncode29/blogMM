@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Admin area</title>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<link rel="stylesheet" href="{{ asset('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')}}">
 	<link rel="stylesheet" href="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous') }}">
 	<link rel="stylesheet" type='text/css' href= "{{ asset('http://fonts.googleapis.com/css?family=Lora') }}">
@@ -64,6 +65,8 @@
 <script type="text/javascript" src="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js') }}"/>
 
 =======
+=======
+>>>>>>> 5988928634d73635be6eb43b56890da76eaa4b6c
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type='text/css' href= "http://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
@@ -108,7 +111,10 @@
                 
             </div>
         </div>
-        @yield('content')
+        <div id="page-content-wrapper">
+            @yield('content')
+
+        </div>  
     </div>
     <!-- /#wrapper -->
 
@@ -116,6 +122,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</script>
 <script src="{{ mix('js/app.js') }}"></script>
+<<<<<<< HEAD
 >>>>>>> 655364403c0921e11aaee52e283ff8e3270f7c3a
+=======
+>>>>>>> 5988928634d73635be6eb43b56890da76eaa4b6c
 </body>
 </html>
