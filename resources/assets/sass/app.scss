@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import "admin_test.css";
 
 
 
@@ -23,7 +24,7 @@ body{
 
 .mm{
 	color:#001f3f;
-	font-family: Cinzel Decorative !important;
+	font-family: Cinzel Decorative;
 	text-transform: uppercase; 
 	font-size:6em;
 	padding-right:2em;
@@ -134,12 +135,12 @@ h2.t{
 	font-size: 3em;
 }
 // login/register
-// #app{
-// 	background:#001f3f;
-// }
-// #app,ul,a.navbar-brand{
-// 	font-size:1.5em;
-// 	color:#001f3f;
-// }
+#app{
+	background:#001f3f;
+}
+#app,ul,a.navbar-brand{
+	font-size:1.5em;
+	color:#001f3f;
+}
 
 

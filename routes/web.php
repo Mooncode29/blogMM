@@ -21,7 +21,7 @@ Route::get('article', function(){
 });
 
 Route::get('master',function(){
-	return view('posts.create');
+	return view('posts.home');
 });
 
 Auth::routes();
