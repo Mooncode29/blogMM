@@ -1,0 +1,149 @@
+body {
+    overflow-x: hidden;
+    background: white !important;
+ }
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #001f3f;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0px;
+    padding-top: 3em;
+    list-style: none;
+}
+
+.sidebar-nav a {
+    text-indent: 20px;
+    line-height: 40px;
+    font-size: 18px;
+    padding-bottom: 2em;
+    padding-left: 1em;
+}
+
+.sidebar-nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.sidebar-nav i {
+    padding-left: 4em;
+    color:white;
+}
+.fa-plus {
+    padding-top: 4em;
+}
+.sidebar-nav a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+.sidebar-nav a:active,
+.sidebar-nav a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+        margin-top:0px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #page-content-wrapper {
+        padding: 10em;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+.navbar-default {
+    background-color: #001f3f !important;
+    height: 80px;
+}
+.title {
+    color : white !important;
+    font-size: 18px;
+}
+.navbar-brand > img {
+    height: 3em;
+}
+
+.contenu {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.btn-primary {
+    margin-right: 5em;
+}
