@@ -11230,17 +11230,13 @@ __webpack_require__(31);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', __webpack_require__(34));
-
-var app = new Vue({
-  el: '#app'
-});
+// require('./admin');
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \n}\n^\n      Invalid CSS after \"}\": expected 1 selector or at-rule, was \"=======\"\n      in /home/muriel/simplon/exos/blog_mm/blog/resources/assets/sass/app.scss (line 142, column 2)\n    at runLoaders (/home/muriel/simplon/exos/blog_mm/blog/node_modules/webpack/lib/NormalModule.js:192:19)\n    at /home/muriel/simplon/exos/blog_mm/blog/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /home/muriel/simplon/exos/blog_mm/blog/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/home/muriel/simplon/exos/blog_mm/blog/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/home/muriel/simplon/exos/blog_mm/blog/node_modules/sass-loader/lib/loader.js:51:13)\n    at Object.<anonymous> (/home/muriel/simplon/exos/blog_mm/blog/node_modules/sass-loader/node_modules/async/dist/async.js:2234:31)\n    at apply (/home/muriel/simplon/exos/blog_mm/blog/node_modules/sass-loader/node_modules/async/dist/async.js:20:25)\n    at Object.<anonymous> (/home/muriel/simplon/exos/blog_mm/blog/node_modules/sass-loader/node_modules/async/dist/async.js:56:12)\n    at Object.callback (/home/muriel/simplon/exos/blog_mm/blog/node_modules/sass-loader/node_modules/async/dist/async.js:844:16)\n    at options.error (/home/muriel/simplon/exos/blog_mm/blog/node_modules/node-sass/lib/index.js:294:32)");
 
 /***/ }),
 /* 12 */
@@ -12084,39 +12080,11 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 30 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-        console.log('Component mounted.');
-    }
-});
-
-/***/ }),
+/* 30 */,
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-
+/* WEBPACK VAR INJECTION */(function($) {
 window._ = __webpack_require__(33);
 
 /**
@@ -12164,6 +12132,17 @@ window.axios.defaults.headers.common = {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+  $(".side-nav .collapse").on("hide.bs.collapse", function () {
+    $(this).prev().find(".fa").eq(1).removeClass("fa-angle-right").addClass("fa-angle-down");
+  });
+  $('.side-nav .collapse').on("show.bs.collapse", function () {
+    $(this).prev().find(".fa").eq(1).removeClass("fa-angle-down").addClass("fa-angle-right");
+  });
+});
+console.log("hello");
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ }),
 /* 32 */
@@ -31642,122 +31621,9 @@ if (typeof jQuery === 'undefined') {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9), __webpack_require__(38)(module)))
 
 /***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(35)(
-  /* script */
-  __webpack_require__(30),
-  /* template */
-  __webpack_require__(36),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/home/muriel/simplon/exos/blog_mm/blog/resources/assets/js/components/Example.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] Example.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5e8d45e4", Component.options)
-  } else {
-    hotAPI.reload("data-v-5e8d45e4", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports) {
-
-module.exports = function normalizeComponent (
-  rawScriptExports,
-  compiledTemplate,
-  scopeId,
-  cssModules
-) {
-  var esModule
-  var scriptExports = rawScriptExports = rawScriptExports || {}
-
-  // ES6 modules interop
-  var type = typeof rawScriptExports.default
-  if (type === 'object' || type === 'function') {
-    esModule = rawScriptExports
-    scriptExports = rawScriptExports.default
-  }
-
-  // Vue.extend constructor export interop
-  var options = typeof scriptExports === 'function'
-    ? scriptExports.options
-    : scriptExports
-
-  // render functions
-  if (compiledTemplate) {
-    options.render = compiledTemplate.render
-    options.staticRenderFns = compiledTemplate.staticRenderFns
-  }
-
-  // scopedId
-  if (scopeId) {
-    options._scopeId = scopeId
-  }
-
-  // inject cssModules
-  if (cssModules) {
-    var computed = options.computed || (options.computed = {})
-    Object.keys(cssModules).forEach(function (key) {
-      var module = cssModules[key]
-      computed[key] = function () { return module }
-    })
-  }
-
-  return {
-    esModule: esModule,
-    exports: scriptExports,
-    options: options
-  }
-}
-
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "container"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-8 col-md-offset-2"
-  }, [_c('div', {
-    staticClass: "panel panel-default"
-  }, [_c('div', {
-    staticClass: "panel-heading"
-  }, [_vm._v("Example Component")]), _vm._v(" "), _c('div', {
-    staticClass: "panel-body"
-  }, [_vm._v("\n                    I'm an example component!\n                ")])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-5e8d45e4", module.exports)
-  }
-}
-
-/***/ }),
+/* 34 */,
+/* 35 */,
+/* 36 */,
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
