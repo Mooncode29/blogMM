@@ -11,11 +11,6 @@
 |
 */
 
-<<<<<<< HEAD
-
-Route::get('/', 'PostsController@getHome');
-=======
->>>>>>> 5988928634d73635be6eb43b56890da76eaa4b6c
 
 
 Route::get('/', function(){
@@ -26,24 +21,14 @@ Route::get('article', function(){
 });
 
 Route::get('master',function(){
-	return view('master');
+	return view('posts.create');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-<<<<<<< HEAD
-
-Route::get('/admin', function () {
-    return view('admin-pages.home');
-});
-
-// Route::get('/', 'PostsController@getHome' );
-Route::get('visitor_posts','PostsController@getVisitorPosts');
-
-=======
 
 Route::get('master/create', 'AdminArticleController@create');
 Route::resource('posts', 'AdminArticleController');
->>>>>>> 5988928634d73635be6eb43b56890da76eaa4b6c
+
 

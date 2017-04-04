@@ -1,23 +1,17 @@
-body {
+/*body {
     overflow-x: hidden;
+    background: white !important;
  }
 
 /* Toggle Styles */
 
-#wrapper {
+/*#wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-/*.haut{
-    padding-left: 250px;
-    padding-top: 0px;
-    height: 51px;
-    background: #001f3f;
-    
-}*/
 
 #wrapper.toggled {
     padding-left: 250px;
@@ -45,6 +39,7 @@ body {
     width: 100%;
     position: absolute;
     padding: 15px;
+
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -55,29 +50,38 @@ body {
     position: absolute;
     top: 0;
     width: 250px;
-    margin: 0;
-    padding: 3em;
+    margin: 0px;
+    padding-top: 3em;
     list-style: none;
 }
 
-.sidebar-nav li {
+.sidebar-nav a {
     text-indent: 20px;
     line-height: 40px;
+    font-size: 18px;
+    padding-bottom: 2em;
+    padding-left: 1em;
 }
 
-.sidebar-nav li a {
+.sidebar-nav a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: white;
 }
-
-.sidebar-nav li a:hover {
+.sidebar-nav i {
+    padding-left: 4em;
+    color:white;
+}
+.fa-plus {
+    padding-top: 4em;
+}
+.sidebar-nav a:hover {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
 }
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
+.sidebar-nav a:active,
+.sidebar-nav a:focus {
     text-decoration: none;
 }
 
@@ -106,7 +110,7 @@ body {
 
     #sidebar-wrapper {
         width: 0;
-        margin-top: 50px;
+        margin-top:0px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
@@ -114,7 +118,7 @@ body {
     }
 
     #page-content-wrapper {
-        padding: 20px;
+        padding: 10em;
         position: relative;
     }
 
@@ -124,17 +128,22 @@ body {
     }
 }
 .navbar-default {
-    background: #001f3f;
-    height: 100px;
+    background-color: #001f3f !important;
+    height: 80px;
+}
+.title {
+    color : white !important;
+    font-size: 18px;
 }
 .navbar-brand > img {
-    height: 4em;
+    height: 3em;
 }
 
 .contenu {
-    margin-top: 100px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
-/*.logo {
-    margin-left: -300px;
-    height: 6em;
-}*/
+
+.btn-primary {
+    margin-right: 5em;
+}*/*/

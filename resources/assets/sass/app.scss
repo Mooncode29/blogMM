@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
 
 
@@ -8,7 +9,7 @@
 
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import url(https://fontlibrary.org/face/cinzel);
-@import "admin.css";
+
 
 body{
 	
@@ -133,160 +134,12 @@ h2.t{
 	font-size: 3em;
 }
 // login/register
-#app{
-	background:#001f3f;
-}
-#app,ul,a.navbar-brand{
-	font-size:1.5em;
-	color:#001f3f;
-}
+// #app{
+// 	background:#001f3f;
+// }
+// #app,ul,a.navbar-brand{
+// 	font-size:1.5em;
+// 	color:#001f3f;
+// }
 
-
-
-// @import "admin.css";
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
-@import "admin_test.css";
-
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
-// Variables
-@import "variables";
-
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
-
-
-body{
-	
-	font-family:Lora, sans-serif;
-	height: 1500px;	
-	margin:0;
-	background: white;
-
-}
-// layout/home
-
-.mm{
-	color:#001f3f;
-	font-family: Cinzel Decorative;
-	text-transform: uppercase; 
-	font-size:6em;
-	padding-right:2em;
-	text-align:right;
-}
-
-	
-.citation{
-	font-size: 2.3em;
-	color:#001f3f;
-	font-style: italic;
-	padding-top:5em;
-	margin-left:2em;
-
-}
-
-h4.auteur{
-	color:#001f3f;
-	font-size:0.8em;
-
-}
-
-.menu{
-	height:150px ;
-	background: #001f3f;
-
-}
-.img{
-	background-image:url("/images/livre2.jpg");
-	width:1550px;
-	height:600px;
-	margin:0;
-}
-
-.blog-title{
-	padding-top: 2em;
-}
-.photo{
-	margin:0;
-	padding-top:150px;
-	
-}
-i.news ,a.article,i.o, a.admin,i.h, a.home{
-	color:white;
-	text-transform: uppercase;
-	padding-top:5em;
-}
-.article,.home{
-	padding-right: 2em;
-}
-.logo{
-	
-	padding-top:2.4em;
-	
-}
-.navbar.header.logo{
-	margin-left: 50px;
-}
-
-.col-md-4{
-	padding-left: 5em;
-	font-size:1.6em;
-
-
-}
-.link{
-	text-align: right;
-	font-size:1.2em;
-}
-
-i.book,.twit,.git{
-	padding-left: 1em;
-	padding-top: 3em;
-	color:white;
-	font-size:20px;
-
-}
-
-
-.post-title,{
-	padding-top: 4em;
-	color:#001f3f;
-}
-footer{
-	
-	padding-top: 4em;
-	height:10px;
-	text-align: center;
-	font-size: 1.2em;
-	color:#001f3f;
-}
-
-.cit.col-lg-8{
-	padding:0;
-}
-
-.a.container{
-	padding-top: 200px;
-	
-
-}
-.post-title,p,h2{
-	color:#001f3f;
-}
-h2.t{
-	text-align: center;
-	color:#001f3f;
-	font-size: 3em;
-}
-// login/register
-#app{
-	background:#001f3f;
-}
-#app,ul,a.navbar-brand{
-	font-size:1.5em;
-	color:#001f3f;
-}
-
-// page master
 
