@@ -118,6 +118,7 @@ footer{
 
 a.container{
 	padding-top: 200px;
+
 	
 }
 .post-title,p,h2{
@@ -129,6 +130,8 @@ h2.t{
 	font-size: 3em;
 }
 // login/register
+
+
 #app{
 	background:#001f3f;
 }
@@ -142,10 +145,13 @@ h2.t{
 .navbar-fixed-top{
 	background:#001f3f;
 	height: 9em;
-    margin:0;
+	margin:0;
 }
-// .navbar-static-top{
-// 	background:#001f3f;
-// 	height: 3em;
-//     margin:0;
-// }
+.dropdown-toggle{
+	text-align:center;
+	color:white !important;
+	font-size:1.5em;
+	margin-left:22em;
+	margin-top:1em;
+}
+
