@@ -20,14 +20,8 @@ Route::get('article', function(){
 	return view('articles');
 });
 
-Route::get('master',function(){
-	return view('posts.create');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('master/create', 'AdminArticleController@create');
-Route::resource('posts', 'AdminArticleController');
 

@@ -3,7 +3,7 @@
                                
     <div class="container-fluid">
         <div class="row">
-            <div class=" contenu col-lg-12">
+            <div class=" contenu col-lg-9">
             	<div class="panel panel-default">
   <!-- Default panel contents -->
 				  	<div class="panel-heading">
