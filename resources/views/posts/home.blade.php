@@ -13,7 +13,7 @@
             			</div>
 				  	</div>
 <!-- 				  	
-				  <!-- Table -->
+				   Table -->
 					<div class="responsive table">
 	            		<table class="table table-striped"> 
 		            		<thead>
