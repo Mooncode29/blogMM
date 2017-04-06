@@ -11,15 +11,11 @@
 		@foreach($articles as $article)
 			<div class="col-lg-6">
 				<h2>{{$article->title}}</h2>
-				<h5>Publié le {{$article->created_at}}</h5>				<!-- <p class="text-danger">As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p> -->
+				<h5>Publié le {{$article->created_at}}</h5>			
 				<p>{{$article->content}}</p>
 			</div>
 		@endforeach
-			<!-- <div class="col-lg-6">
-				<h2>Safari bug warning!</h2>
-				<p class="text-danger">As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
- -->
+		
 			</div>
 		</div>
 	</div>
