@@ -17,9 +17,10 @@
 Route::get('/', function(){
 	return view('home');
 });
-Route::get('article', function(){
-	return view('articles');
-});
+// Route::get('article', function(){
+// 	return view('articles');
+// });
+Route::get('article', 'PostController@userindex');
 Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::get('master', 'PostController@index');

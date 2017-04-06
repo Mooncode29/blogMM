@@ -107,4 +107,8 @@ class PostController extends Controller
         
         return redirect()->action('PostController@index');
     }
+    public function userindex(){
+        $articles = Post::all();
+        return view('articles', ['articles' => $articles]);
+    }
 }
