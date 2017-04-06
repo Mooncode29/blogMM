@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
-class AdminArticleController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class AdminArticleController extends Controller
      */
     public function index()
     {
-        //
+        $posts =Post::all();
+        return view('posts.home',['posts' => $posts]);
     }
 
     /**
@@ -23,7 +25,7 @@ class AdminArticleController extends Controller
      */
     public function create()
     {
-        return view('/posts.create');
+        return view('posts.create');
     }
 
     /**
@@ -34,7 +36,15 @@ class AdminArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+         'title'=> 'required',
+         'content' => 'required']);
+
+     $post = new post;
+     $post->title = $request->title;
+     $post->content = $request->content;
+     $post->save();
+     return redirect()->action('PostController@index')->with('alert-success','article creé!');
     }
 
     /**
@@ -45,7 +55,8 @@ class AdminArticleController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::findOrFail($id);
+        return view('posts.show', compact('post'));
     }
 
     /**
@@ -56,7 +67,8 @@ class AdminArticleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::findOrFail($id);
+        return view('posts.edit', compact('post'));
     }
 
     /**
@@ -68,7 +80,18 @@ class AdminArticleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
+        $this->validate($request,[
+         'title'=> 'required',
+         'content' => 'required',
+         ]);
+
+        $post = Post::findOrFail($request->id);
+        $post->title = $request->title;
+        $blog->content = $request->content;
+        $blog->save();
+
+    return redirect('/master/show/'.$post->id)->with('alert-success');
     }
 
     /**
@@ -79,6 +102,9 @@ class AdminArticleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::findOrFail($id);
+        $post->delete();
+        
+        return redirect()->action('PostController@index');
     }
 }
