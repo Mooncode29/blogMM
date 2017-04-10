@@ -51,10 +51,10 @@ Sidebar
 <div id="sidebar-wrapper">
  <div class="sidebar-nav">
    <i class="fa fa-plus" aria-hidden="true"></i>
-   <a href="#">Nouvel article</a>
+   <a href="create">Nouvel article</a>
 
    <i class=" news fa fa-newspaper-o" aria-hidden="true"></i>
-   <a href="#">Articles</a>
+   <a href="/home">Articles</a>
 
    <i class="fa fa-floppy-o" aria-hidden="true"></i>
    <a href="#">Brouillon</a>

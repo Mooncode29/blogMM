@@ -13,7 +13,7 @@
 	        </ul>
     	</div>
 		@endif
-		{!! Form::open(['url' => 'master/update']) !!}
+		{!! Form::open(['url' => 'update']) !!}
     		{{ Form::label('title', 'titre')}}
     		{{ Form::text('title', $post->title, array('class'=>'form-control'))}}
     		{{ Form::label('content', 'contenu')}}
@@ -21,6 +21,7 @@
     		{{ Form::submit('modifier', array('class'=>'btn btn-success btn-block','style'=>'margin-top:2em;')) }}
     		{{ Form::checkbox('brouillon','false') }}
     		{{ Form::label('brouillon', 'brouillon') }}
+    		<input type="hidden" name="id" value="{{$post->id}}">
 
 		{!! Form::close() !!}
 		

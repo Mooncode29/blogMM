@@ -12,11 +12,11 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $posts =Post::all();
-        return view('posts.home',['posts' => $posts]);
-    }
+    // public function index()
+    // {
+    //     $posts =Post::all();
+    //     return view('posts.home',['posts' => $posts]);
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -44,7 +44,7 @@ class PostController extends Controller
      $post->title = $request->title;
      $post->content = $request->content;
      $post->save();
-     return redirect()->action('PostController@index')->with('alert-success','article creé!');
+     return redirect()->action('HomeController@index')->with('alert-success','article creé!');
     }
 
     /**
@@ -78,7 +78,7 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
         
         $this->validate($request,[
@@ -88,10 +88,10 @@ class PostController extends Controller
 
         $post = Post::findOrFail($request->id);
         $post->title = $request->title;
-        $blog->content = $request->content;
-        $blog->save();
+        $post->content = $request->content;
+        $post->save();
 
-    return redirect('/master/show/'.$post->id)->with('alert-success');
+    return redirect()->action('HomeController@index')->with('alert-success');
     }
 
     /**
@@ -105,9 +105,9 @@ class PostController extends Controller
         $post = Post::findOrFail($id);
         $post->delete();
         
-        return redirect()->action('PostController@index');
+        return redirect()->action('HomeController@index');
     }
-    public function userindex(){
+    public function userIndex(){
         $articles = Post::all();
         return view('articles', ['articles' => $articles]);
     }

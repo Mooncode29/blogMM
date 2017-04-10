@@ -13,7 +13,7 @@
 	        </ul>
     	</div>
 		@endif
-		{!! Form::open(['url' => 'master/store']) !!}
+		{!! Form::open(['url' => 'store']) !!}
     		{{ Form::label('title', 'titre')}}
     		{{ Form::text('title', null, array('class'=>'form-control'))}}
     		{{ Form::label('content', 'contenu')}}
