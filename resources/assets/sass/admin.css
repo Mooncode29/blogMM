@@ -1,7 +1,21 @@
 body {
     overflow-x: hidden;
-    
+    background: white !important;
  }
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
 
 #sidebar-wrapper {
     z-index: 1000;
@@ -18,6 +32,12 @@ body {
     transition: all 0.5s ease;
 }
 
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+
+}
 
 .sidebar-nav {
     position: absolute;
@@ -34,6 +54,11 @@ body {
     font-size: 18px;
     padding-bottom: 2em;
     padding-left: 1em;
+
+}
+
+.sidebar-nav a {
+
     display: block;
     text-decoration: none;
     color: white;
@@ -43,7 +68,10 @@ body {
     color:white;
 }
 .fa-plus {
+
+    padding-top: 4em;
     padding-top: 10em;
+
 }
 .sidebar-nav a:hover {
     text-decoration: none;
@@ -55,17 +83,17 @@ body {
     text-decoration: none;
 }
 
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav.sidebar-brand {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
 }
 
-.sidebar-nav.sidebar-brand a {
+.sidebar-nav > .sidebar-brand a {
     color: #999999;
-}
 
-.sidebar-nav.sidebar-brand a:hover {
+
+.sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
 }
@@ -98,6 +126,15 @@ body {
     }
 }
 .navbar-default {
+    background-color: #001f3f !important;
+    height: 80px;
+}
+.title {
+    color : white !important;
+    font-size: 18px;
+}
+.navbar-brand > img {
+    height: 3em;
     background-color: #001f3f ;
     height: 9em;
     margin:0;
@@ -106,15 +143,20 @@ body {
     color : white;
     font-size: 18px;
 }
-.navbar-brand ,img {
+.navbar-brand > img {
     font-size: 3em;
 }
 
 .contenu {
-    margin-left: 22em;
-    
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .btn-primary {
     margin-right: 5em;
 }
+
+.btn-primary {
+    margin-right: 5em;
+}
+

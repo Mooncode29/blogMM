@@ -3,7 +3,7 @@
 .navbar-default {
 	background: #001f3f;
 }
-.navbar-nav.menu-item {
+.navbar-nav  > .menu-item {
     float: none;
     display: inline-block;
     font-size: 1.4em;

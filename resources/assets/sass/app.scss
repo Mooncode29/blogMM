@@ -65,13 +65,10 @@ h4.auteur{
 	padding-top:150px;
 	
 }
-i.news ,a.article,i.o,a.admin,i.h, a.home{
+i.news ,a.article,i.o, a.admin,i.h, a.home{
 	color:white;
 	text-transform: uppercase;
 	padding-top:5em;
-}
-.admin{
-	font-size:4em;
 }
 .article,.home{
 	padding-right: 2em;
@@ -88,11 +85,9 @@ i.news ,a.article,i.o,a.admin,i.h, a.home{
 
 
 }
-.link,{
-	text-align:right;
+.link{
+	text-align: right;
 	font-size:1.2em;
-	
-	
 }
 
 i.book,.twit,.git{
@@ -121,6 +116,11 @@ footer{
 	padding:0;
 }
 
+a.container{
+	padding-top: 200px;
+
+	
+}
 .post-title,p,h2{
 	color:#001f3f;
 }
@@ -154,3 +154,4 @@ h2.t{
 	margin-left:22em;
 	margin-top:1em;
 }
+

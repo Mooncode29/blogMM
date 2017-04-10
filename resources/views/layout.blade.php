@@ -19,28 +19,28 @@
         <img class="logo" src="images/logo.png">
       </div>
       <div class=" social row">
-       <a href="{{url('https://fr-fr.facebook.com/')}}"><i class=" book fa fa-facebook"></i></a> 
-       <a href="{{url('https://twitter.com/?lang=fr')}}"><i class="twit fa fa-twitter"></i></a> 
-       <a href="{{url('https://github.com/')}}"><i class=" git fa fa-github" aria-hidden="true"></i></a>
-     </div>
-     <div class="link">
-       <i class=" h fa fa-flag-o" aria-hidden="true"></i>
-       <a class="home" href="{{url('/')}}">Accueil</a>
-       <i class=" news fa fa-newspaper-o" aria-hidden="true"></i>
-       <a class="article" href="{{url('article')}}">Articles</a>
-       <i class=" o fa fa-user-o" aria-hidden="true"></i>
-       <a class="admin" href="{{url('register')}}">Administration</a>
-     </div>
+       <div class="col-md-4">
+         <a href="https://fr-fr.facebook.com/"><i class=" book fa fa-facebook"></i></a> 
+         <a href="https://twitter.com/?lang=fr"><i class="twit fa fa-twitter"></i></a> 
+         <a href="https://github.com/"><i class=" git fa fa-github" aria-hidden="true"></i></a>
+       </div>
+       <div class="link">
+         <i class=" h fa fa-flag-o" aria-hidden="true"></i>
+         <a class="home" href="/">Accueil</a>
+         <i class=" news fa fa-newspaper-o" aria-hidden="true"></i>
+         <a class="article" href="article">Articles</a>
+         <i class=" o fa fa-user-o" aria-hidden="true"></i>
+         <a class="admin" href="register">Administration</a>
+       </div>
+     </div> 
    </div>
- </div> 
-</div>
-</nav>
+ </nav>
 
-@yield('content')
+ @yield('content')
 
 
-
-<footer class="fixed-bottom">
+ 
+ <footer class="fixed-bottom">
   <div class="row">
    Copyright<i class=" cop fa fa-copyright" aria-hidden="true"></i> BLOG MM 2017
  </div>
