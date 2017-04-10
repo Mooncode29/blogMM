@@ -51,7 +51,7 @@ Sidebar
 <div id="sidebar-wrapper">
  <div class="sidebar-nav">
    <i class="fa fa-plus" aria-hidden="true"></i>
-   <a href="create">Nouvel article</a>
+   <a href="/home/create">New article</a>
 
    <i class=" news fa fa-newspaper-o" aria-hidden="true"></i>
    <a href="/home">Articles</a>

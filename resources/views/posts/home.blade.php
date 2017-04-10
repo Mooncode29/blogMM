@@ -8,7 +8,10 @@
  
 				  	<div class="panel-heading">
 				  		<div class="bouton">
-		            		<form action="create" method="get"><button class="btn btn-primary"> + nouvel article</button></form>
+		            		<form action="/home/create" method="get">
+		            			<button class="btn btn-primary"> + nouvel article
+		            			</button>
+		            		</form>
 		                </div>
 				  	</div>		 
 
