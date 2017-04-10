@@ -3,31 +3,39 @@
                                
     <div class="container-fluid">
         <div class="row">
-            <div class=" contenu col-lg-12">
+            <div class=" contenu col-lg-10">
             	<div class="panel panel-default">
-  <!-- Default panel contents -->
+ 
 				  	<div class="panel-heading">
 				  		<div class="bouton">
-		            		<button class="btn btn-primary"> + nouvel article</button>
-		            		<button class="btn btn-primary"> supprimer la selection</button>
-            			</div>
-				  	</div>
-<!-- 				  	
-				   Table -->
+		            		<form action="create" method="get"><button class="btn btn-primary"> + nouvel article</button></form>
+		                </div>
+				  	</div>		 
+
 					<div class="responsive table">
 	            		<table class="table table-striped"> 
 		            		<thead>
 								<tr>
 									<th>Titre</th>
 									<th>Publié le</th>
-								</tr>
+							
 							</thead>
+							@foreach($posts as $post)
 							<tbody>
 								<tr>
-									<td>Lorem ipsum dolor sit amet</td>
-									<td>Lorem ipsum dolor sit ame</td>
+									<td>{{$post->title}}</td>
+									<td>{{$post->created_at}}</td>
+									<td><form action="show/{{$post->id}}" method="get"><button class="btn btn-primary">voir</button></form></td>
+									<td><form action="edit/{{$post->id}}" method="get"><button class="btn btn-success">Editer</button></form></td>
+									<td><form action="delete/{{$post->id}}" method="post">
+									{{csrf_field()}}
+									{{method_field('DELETE')}}
+									<button class="btn btn-danger">Supprimer</button>
+									</form>
+									</td>
 								</tr>
 							</tbody>
+							@endforeach
 						</table>
             		</div>
 				  	
