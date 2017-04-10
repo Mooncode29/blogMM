@@ -1,3 +1,4 @@
+
 body {
     overflow-x: hidden;
     background: white !important;
@@ -31,9 +32,6 @@ body {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-#wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-}
 
 #page-content-wrapper {
     width: 100%;
@@ -42,10 +40,6 @@ body {
 
 }
 
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -61,19 +55,21 @@ body {
     font-size: 18px;
     padding-bottom: 2em;
     padding-left: 1em;
-}
-
-.sidebar-nav a {
     display: block;
     text-decoration: none;
     color: white;
+
 }
+
 .sidebar-nav i {
     padding-left: 4em;
     color:white;
 }
 .fa-plus {
+
     padding-top: 4em;
+    padding-top: 10em;
+
 }
 .sidebar-nav a:hover {
     text-decoration: none;
@@ -85,20 +81,12 @@ body {
     text-decoration: none;
 }
 
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav .sidebar-brand {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
 }
 
-.sidebar-nav > .sidebar-brand a {
-    color: #999999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
 @media(min-width:768px) {
     #wrapper {
         padding-left: 0;
@@ -137,13 +125,27 @@ body {
 }
 .navbar-brand > img {
     height: 3em;
+    background-color: #001f3f ;
+    margin:0;
+}
+.title {
+    color : white;
+    font-size: 18px;
 }
 
 .contenu {
     padding-top: 0px;
     margin-top: 0px;
+    margin-left: 250px;
+   
 }
-
 .btn-primary {
     margin-right: 5em;
 }
+.card{
+    margin-left: 250px;
+}
+
+
+
+

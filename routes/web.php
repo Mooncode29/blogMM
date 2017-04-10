@@ -13,22 +13,20 @@
 
 
 
+
 Route::get('/', function(){
 	return view('home');
 });
-Route::get('article', function(){
-	return view('articles');
-});
 
-Route::get('master',function(){
-	return view('posts.home');
-});
-
+Route::get('article', 'PostController@userIndex');
 Auth::routes();
-
 Route::get('/home', 'HomeController@index');
-
-Route::get('master/create', 'AdminArticleController@create');
-Route::resource('posts', 'AdminArticleController');
+Route::get('create', 'PostController@create');
+Route::post('store', 'PostController@store');
+Route::get('edit/{id}', 'PostController@edit');
+Route::post('update', 'PostController@update');
+Route::get('show/{id}', 'PostController@show');
+Route::delete('delete/{id}', 'PostController@destroy');
+Route::resource('posts', 'PostController');
 
 

@@ -25,13 +25,6 @@
                 <img class="logo" src="images/logoA.png">
                 <div class="container">
                     <div class="navbar-header">
-                     <!-- Collapsed Hamburger -->
-                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar">hyhyy</span>
-                        <span class="icon-bar">frfrf</span>
-                        <span class="icon-bar">dedede</span>
-                    </button>
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
@@ -47,11 +40,11 @@
 
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="connect nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                        <li><a href="{{ route('login') }}">Connection</a></li>
-                        <li><a href="{{ route('register') }}">S'enregistrer</a></li>
+                        <li><a class="login" href="{{ route('login') }}">Connexion</a></li>
+                        <li><a class="register"href="{{ route('register') }}">S'enregistrer</a></li>
                         @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

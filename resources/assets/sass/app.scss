@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
-@import "admin_test.css";
 
-
+@import "admin.css";
 
 // Variables
 
@@ -31,7 +30,7 @@ body{
 	text-align:right;
 }
 
-	
+
 .citation{
 	font-size: 2.3em;
 	color:#001f3f;
@@ -80,9 +79,6 @@ i.news ,a.article,i.o, a.admin,i.h, a.home{
 	padding-top:2.4em;
 	
 }
-.navbar.header.logo{
-	margin-left: 50px;
-}
 
 .col-md-4{
 	padding-left: 5em;
@@ -121,10 +117,10 @@ footer{
 	padding:0;
 }
 
-.a.container{
+a.container{
 	padding-top: 200px;
-	
 
+	
 }
 .post-title,p,h2{
 	color:#001f3f;
@@ -135,12 +131,29 @@ h2.t{
 	font-size: 3em;
 }
 // login/register
+
+
 #app{
 	background:#001f3f;
 }
+
+
 #app,ul,a.navbar-brand{
-	font-size:1.5em;
+	font-size:2em;
 	color:#001f3f;
+}
+
+.navbar-fixed-top{
+	background:#001f3f;
+	height: 9em;
+	margin:0;
+}
+.dropdown-toggle{
+	text-align:center;
+	color:white !important;
+	font-size:1.5em;
+	margin-left:22em;
+	margin-top:1em;
 }
 
 
