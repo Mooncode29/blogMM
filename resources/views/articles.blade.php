@@ -3,10 +3,10 @@
 @section('content')
 <div class="a container">
 
-	<h2 class ="t">Hello!</h2>
+	<h2 class ="t">Les news!</h2>
 	
 
-	<div class="jumbotron">
+	<div class="arts">
 		<div class="row">
 		@foreach($articles as $article)
 			<div class="col-lg-6">
